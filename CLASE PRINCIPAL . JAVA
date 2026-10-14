@@ -1,0 +1,21 @@
+/**
+ * Clase principal para probar la instanciación de objetos y la ejecución de métodos.
+ */
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("=== SISTEMA DE GESTIÓN DE ESTUDIANTES ===");
+
+        // 1. Instanciación de Objetos (Creación de objetos a partir de la clase Estudiante)
+        Estudiante estudiante1 = new Estudiante("Sofía Pérez", 20, "Ingeniería en Sistemas", 88.5);
+        Estudiante estudiante2 = new Estudiante("Carlos Gómez", 22, "Administración de Empresas", 65.0);
+
+        // 2. Uso de métodos con el primer objeto
+        estudiante1.mostrarInformacion();
+        estudiante1.evaluarAprobacion();
+
+        // 3. Uso de métodos con el segundo objeto
+        estudiante2.mostrarInformacion();
+        estudiante2.evaluarAprobacion();
+        
+        System.out.println("----------------------------------------");
+    }
